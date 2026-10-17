@@ -1,8 +1,13 @@
 const mongoose = require("mongoose");
 
+
 const postSchema = new mongoose.Schema({
-    image:String,
-    captain: String,
+    image: String,
+    caption: String,
 })
-const postModel = mongoose.model("users",postSchema)
-module.exports = postModel
+
+
+const postModel = mongoose.model("post", postSchema)
+
+
+module.exports = postModel;
